@@ -57,7 +57,7 @@
 	</tr>
 	<% while(rs.next()) { %>
 	<tr align="center">
-		<td class="link"><a href="update.jsp?custno=<%= rs.getString("custno") %>" style="color:black;"><%= 
+		<td class="link"><a href="update.jsp?custno=<%= rs.getString("custno") %>" style="color:blue;"><%= 
 	rs.getString("custno")%></a></td>
 		<td> <%= rs.getString("custname") %></td>
 		<td> <%= rs.getString("phone") %></td>
