@@ -22,7 +22,7 @@
 			cv.custname.focus();
 			return false;
 		} else if(!cv.phone.value) {
-			alert("전화번호를 입력하세요.");
+			alert("전화번호를 입력하세요.")
 			cv.phone.focus();
 			return false;
 		} else if(!cv.address.value) {
@@ -60,7 +60,7 @@
 			</tr>
 			<tr>
 				<th>회원성명</th>
-				<td><input type="text" name="custname" size="10"></td>
+				<td><input type="text" name="custname" size="10" autofocus></td>
 			</tr>
 			<tr>
 				<th>회원전화</th>
