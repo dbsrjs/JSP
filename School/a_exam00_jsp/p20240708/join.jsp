@@ -22,7 +22,7 @@
 			cv.custname.focus();
 			return false;
 		} else if(!cv.phone.value) {
-			alert("전화번호를 입력하세요.")
+			alert("전화번호를 입력하세요.");
 			cv.phone.focus();
 			return false;
 		} else if(!cv.address.value) {
