@@ -18,35 +18,34 @@ rs.next();
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.1.1">
 <script type="text/javascript">
-	function checkValue() {
-		var cv = doument.data;
-		
-		if(!cv.custname.value) {
-			alert("회원성명을 입력하세요.");
-			cv.custname.focus();
-			return false;
-		} else if(!cv.phone.value) {
-			alert("전화번호를 입력하세요.")
-			cv.phone.focus();
-			return false;
-		} else if(!cv.address.value) {
-			alert("주소를 입력하세요.");
-			cv.address.focus();
-			return false;
-		} else if(!cv.joindate.value) {
-			alert("가입일자를 입력하세요.");
-			cv.joindate.focus();
-			return false;
-		} else if(cv.grade.value=="") {
-			alert("고객등급을 입력하세요.");
-			cv.grade.focus();
-			return false;
-		} else if(!document.data.city.value) {
-			alert("도시코드를 입력하세요.")
-			cv.city.focus();
-			return false;
-		}
+function checkValue() {
+	var cv = document.data;
+	if(!cv.custname.value) {
+		alert("회원성명을 입력하세요.");
+		cv.custname.focus();
+		return false;
+	} else if(!cv.phone.value) {
+		alert("전화번호를 입력하세요.")
+		cv.phone.focus();
+		return false;
+	} else if(!cv.address.value) {
+		alert("주소를 입력하세요.");
+		cv.address.focus();
+		return false;
+	} else if(!cv.joindate.value) {
+		alert("가입일자를 입력하세요.");
+		cv.joindate.focus();
+		return false;
+	} else if(cv.grade.value=="") {
+		alert("고객등급을 입력하세요.");
+		cv.grade.focus();
+		return false;
+	} else if(!document.data.city.value) {
+		alert("도시코드를 입력하세요.")
+		document.data.city.focus();
+		return false;
 	}
+}
 	function checkDel(custno) {
 		msg="삭제하시겠습니까?";
 		if(confirm(msg)!=0) {
@@ -97,7 +96,7 @@ rs.next();
 						   value="<%= rs.getString("joindate") %>" size="10"></td>
 			</tr>
 			<tr>
-				<th>고객등급 A-VIP B-일반 C-직원</th>
+				<th>고객등급</th>
 				<td><input type="text" name="grade"
 						   value="<%= rs.getString("grade") %>" size="10"></td>
 			</tr>
@@ -110,7 +109,7 @@ rs.next();
 				<td colspan="2" align="center">
 					<input type="submit" name="submit" value="수정">
 					<input type="button" name="search" value="조회"
-						  onclick="location.href='member_list.jsp'">
+						  onclick="parent.location.href='member_list.jsp'">
 					<input type="button" value="삭제"
 						   onclick="checkDel(<%= rs.getString("custno")%>);">
 				</td>
