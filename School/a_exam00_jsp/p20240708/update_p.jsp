@@ -7,19 +7,19 @@
 try {
 	request.setCharacterEncoding("UTF-8");
 	
-	String sql = "insert into member_tbl_02 values(?, ?, ?, ?, ?, ?, ?)";
+	String sql = "update member_tbl_02 "
+			  + " set custname=?, phone=?, address=?, joindate=?, grade=?, city=? "
+			  + " where custno="+ request.getParameter("custno");
 	PreparedStatement pstmt = conn.prepareStatement(sql);
 	
-	pstmt.setInt(1, Integer.parseInt(request.getParameter("custno")));
-	pstmt.setString(2, request.getParameter("custname"));
-	pstmt.setString(3, request.getParameter("phone"));
-	pstmt.setString(4, request.getParameter("address"));
-	pstmt.setString(5, request.getParameter("joindate"));
-	pstmt.setString(6, request.getParameter("grade"));
-	pstmt.setString(7, request.getParameter("city"));
+	pstmt.setString(1, request.getParameter("custname"));
+	pstmt.setString(2, request.getParameter("phone"));
+	pstmt.setString(3, request.getParameter("address"));
+	pstmt.setString(4, request.getParameter("joindate"));
+	pstmt.setString(5, request.getParameter("grade"));
+	pstmt.setString(6, request.getParameter("city"));
 	
 	pstmt.executeUpdate();
-	
 	
 } catch(Exception e) {
 	e.printStackTrace();
@@ -32,6 +32,8 @@ try {
 <title>쇼핑몰 회원관리</title>
 </head>
 <body>
-	<jsp:forward page="join.jsp"></jsp:forward>
+<body>
+	<jsp:forward page="member_list.jsp"></jsp:forward>
+</body>
 </body>
 </html>
