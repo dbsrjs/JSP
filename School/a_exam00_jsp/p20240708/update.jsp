@@ -110,7 +110,7 @@ rs.next();
 				<td colspan="2" align="center">
 					<input type="submit" name="submit" value="수정">
 					<input type="button" name="search" value="조회"
-						  onclick="location.href='join.jsp'">
+						  onclick="location.href='member_list.jsp'">
 					<input type="button" value="삭제"
 						   onclick="checkDel(<%= rs.getString("custno")%>);">
 				</td>
