@@ -5,7 +5,7 @@
    
    <%
    		String sql="select custno, custname, phone, address, "
-   			+ " to_char(joindate, 'yyy-mm-dd') joindate, "
+   			+ " to_char(joindate, 'yyyy-mm-dd') joindate, "
    			+ " case when grade = 'A' then 'VIP' "
   			+ "     when grade = 'B' then '일반' "
   			+ "     else  '직원' end grade, city "
