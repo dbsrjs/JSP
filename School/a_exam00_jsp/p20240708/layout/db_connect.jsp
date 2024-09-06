@@ -12,7 +12,7 @@
 Connection conn = null;
 
 String url = "jdbc:oracle:thin:@localhost:1521:xe";
-String id="system";
+String id = "system";
 String pw = "1234";
 try {
 	Class.forName("oracle.jdbc.OracleDriver");
