@@ -92,14 +92,18 @@ function checkValue() {
 			</tr>
 			<tr>
 				<th>가입일자</th>
-				<td><input type="text" name="joindate"
+				<td><input type="date" name="joindate"
 						   value="<%= rs.getString("joindate") %>" size="10"></td>
 			</tr>
 			<tr>
 				<th>고객등급</th>
-				<td><input type="text" name="grade"
-						   value="<%= rs.getString("grade") %>" size="10"></td>
+				<td>
+					<input type="radio" name="grade" value="A"<%=("A".equals(rs.getString("grade"))) ? "checked" : ""  %>>A-VIP
+					<input type="radio" name="grade" value="B"<%=("B".equals(rs.getString("grade"))) ? "checked" : ""  %>>B-일반
+					<input type="radio" name="grade" value="C"<%=("C".equals(rs.getString("grade"))) ? "checked" : ""  %>>C-직원
+				</td>
 			</tr>
+			
 			<tr>
 				<th>도시코드</th>
 				<td><input type="text" name="city"
