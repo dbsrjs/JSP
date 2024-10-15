@@ -106,8 +106,19 @@ function checkValue() {
 			
 			<tr>
 				<th>도시코드</th>
-				<td><input type="text" name="city"
-						   value="<%= rs.getString("city") %>" size="10"></td>
+					<td>
+						<select id="city" name="city">
+							<option value="10">서울</option>
+							<option value="20">대전</option>
+							<option value="30">대구</option>
+							<option value="40">광주</option>
+							<option value="50">성남</option>
+							<option value="60">수원</option>
+							<option value="70">분당</option>
+							<option value="80">용인</option>
+							<option value="90">과천</option>
+						</select>
+				    </td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
@@ -119,6 +130,9 @@ function checkValue() {
 				</td>
 			</tr>
 		</table>
+		<script>
+			document.getElementById("city").value="<%= rs.getString("city")%>";
+		</script>
 	</form>
 </main>
 <footer>
