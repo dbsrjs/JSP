@@ -22,8 +22,6 @@ insert into course_tbl_02 values('30001', '소프트웨어 공학', 2, 3, 4, 133
 insert into course_tbl_02 values('40002', '시스템 분석 및 설계', 3, 3, 5, 0900, 1200);
 insert into course_tbl_02 values('40001', '데이터베이스', 3, 2, 5, 1300, 1600);
 
-select * from COURSE_TBL_02;
-
 create table lecturer_tbl_02 (
     id number(6) not null primary key,
     name varchar2(10),
