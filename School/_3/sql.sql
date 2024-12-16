@@ -22,6 +22,8 @@ insert into course_tbl_02 values('30001', '소프트웨어 공학', 2, 3, 4, 133
 insert into course_tbl_02 values('40002', '시스템 분석 및 설계', 3, 3, 5, 0900, 1200);
 insert into course_tbl_02 values('40001', '데이터베이스', 3, 2, 5, 1300, 1600);
 
+select * from COURSE_TBL_02;
+
 create table lecturer_tbl_02 (
     id number(6) not null primary key,
     name varchar2(10),
@@ -36,3 +38,26 @@ insert into lecturer_tbl_02 values(4, '우교수', '소프트웨어공학', '데
 insert into lecturer_tbl_02 values(5, '최교수', '응용컴퓨터공학', '임베디드 시스템');
 insert into lecturer_tbl_02 values(6, '강교수', '응용컴퓨터공학', '멀티미디어');
 insert into lecturer_tbl_02 values(7, '황교수', '모바일시스템공학', '네트워크');
+
+select * from course_tbl_02;
+select * from lecturer_tbl_02;
+
+select c.sub_id, c.sub_name, c.credit, l.name,
+
+   decode(c.week, '1','월요일', '2','화요일', '3','수요일',
+
+                   '4','목요일', '5','금요일', '6','토요일'),
+
+--    substr(start_hour, 1, 2)||':'||substr(start_hour, 3, 2),
+
+--    to_char(to_date(start_hour, 'HH:MI'), 'HH:MI')
+
+   substr(lpad(start_hour,4,'0'),1,2)||':'||substr(lpad(start_hour, 4,'0'),3,2),
+
+   substr(lpad(end_hour,4,'0'),1,2)||':'||substr(lpad(end_hour, 4,'0'),3,2)
+
+from COURSE_TBL_02 c JOIN LECTURER_TBL_02 l on c.lec_id = l.id;
+
+
+
+
