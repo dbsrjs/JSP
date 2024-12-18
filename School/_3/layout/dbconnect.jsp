@@ -13,11 +13,7 @@
 
    Class.forName("oracle.jdbc.OracleDriver");
 
-   
-
    Connection con = null;
-
-   
 
    try{
 
