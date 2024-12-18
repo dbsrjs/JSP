@@ -7,11 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<ul>
-		<li><a href="#">과목목록</a></li>
-		<li><a href="#">과목추가</a></li>
-		<li><a href="#">교수추가</a></li>
-		<li><a href="index.jsp">홈으로</a></li>
-	</ul>
+	<nav>
+		<ul>
+			<li><a href="#">과목목록</a></li>
+			<li><a href="#">과목추가</a></li>
+			<li><a href="#">교수추가</a></li>
+			<li><a href="index.jsp">홈으로</a></li>
+		</ul>
+	</nav>
 </body>
 </html>
