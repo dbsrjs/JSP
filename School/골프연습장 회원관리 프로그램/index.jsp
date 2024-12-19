@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <jsp:include page="layout/header.jsp"></jsp:include>
-    <jsp:include page="layout/nav.jsp"></jsp:include>
+    <header><jsp:include page="layout/header.jsp"></jsp:include></header>
+    <nav><jsp:include page="layout/nav.jsp"></jsp:include></nav>
 
         <section id="section">
-            <h2>골프연습장 회원관리</h2>
+            <h2 class="title">골프연습장 회원관리</h2>
             <p>
             골프연습장에 등록된 감사와 회원들의 수강신청을 관리하는 프로그램이다.<br>
             <strong>프로그램 작성 순서</strong> <br>
@@ -30,6 +30,6 @@
    </p>
 </section>
 
-<jsp:include page="layout/footer.jsp"></jsp:include>
+<footer><jsp:include page="layout/footer.jsp"></jsp:include></footer>
 </body>
 </html>
