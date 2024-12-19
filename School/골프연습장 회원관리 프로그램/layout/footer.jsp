@@ -8,6 +8,6 @@
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <footer id="footer"><p>HRDKOREA Copyright&copy;2020 All rights reserved. Human Resources Development Service of Korea.</p></footer>
+    <footer id="footer">HRDKOREA Copyright&copy;2020 All rights reserved. Human Resources Development Service of Korea.</footer>
 </body>
 </html>
