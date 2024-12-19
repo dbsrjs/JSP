@@ -47,7 +47,7 @@ a{color: white; text-decoration: none;}
 .table_line {
 	margin: 0 auto;
 	overflow: auto;
-	width: 400px;
+	width: 800px;
 	border: 1px solid rgba(0,0,1.0);
 }
 
