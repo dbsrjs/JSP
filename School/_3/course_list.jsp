@@ -27,7 +27,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="css/style.css?ver=123">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	
@@ -36,9 +36,8 @@
 
 	<section id="section">
 		<h2 id="title">교과목 현황</h2>
-		<table>
+			<table>
 			<caption>총 <%=count %>개의 교과목이 있습니다.</caption>
-			
 			<tr>
 				<th>과목코드</th>
 				<th>과목명</th>
@@ -66,6 +65,11 @@
 				</td>
 			</tr>
 		<%} %>
+			<tr>
+				<td colspan="8" class="edit">
+					<input type="button" value="작성" onclick="location.href='course_insert.jsp'">
+				</td>
+			</tr>
 		</table>
 	</section>
 	
