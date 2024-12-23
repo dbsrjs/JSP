@@ -59,9 +59,9 @@
 				<td><%= rs.getString(6) %></td>
 				<td><%= rs.getString(7) %></td>
 				<td>
-					<input value="수정" onclick="location.href='course_update.jsp?sub_id=<%=rs.getString(1)%>'">
+					<input type="button" value="수정" onclick="location.href='course_update.jsp?sub_id=<%=rs.getString(1)%>'">
 					/
-					<input value="삭제" onclick="location.href='course_delete.jsp?sub_id=<%=rs.getString(1)%>'">
+					<input type="button" value="삭제" onclick="location.href='course_delete.jsp?sub_id=<%=rs.getString(1)%>'">
 				</td>
 			</tr>
 		<%} %>
