@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{	/* 링크 태그 */
+	color: white;
+	text-decoration: none;	/* 밑줄을 없애줌. */
+}
+
+header{
+	width: 100%;
+	height: 120px;
+	line-height: 120px;
+	background-color: blue;
+	color: white;	
+	text-align: center;
+}
+
+nav{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgba(0, 0, 255, 0.6);
+}
+
+#nav ul li {
+	float: left;		/* 시작 지점 */
+	padding: 0 10px;	/* 여백 크기 */
+	list-style: none;	/* 점 없애기. */
+}
+
+section{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(127, 127, 127, 0.1);
+}
+
+#section p{
+	padding: 20px;
+}
+
+.title{
+	padding: 30px 0 20px 0;
+	text-align: center;
+}
+
+.scroll {
+	height: 400px;
+	overflow: auto;
+}
+
+.table_line {
+	margin: 0 auto;
+        overflow: auto;			/* 화면에 다 담지 못할 경우 스크롤바를 만들어 줌 */
+	border: 1px solid black;	/* 테두리 */
+}
+
+.table_line th, .table_line td{
+	padding: 5px;
+	border: 1px solid black;
+}
+
+footer{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
