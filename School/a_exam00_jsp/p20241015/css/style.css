@@ -55,7 +55,7 @@ section{
 
 .table_line {
 	margin: 0 auto;
-        overflow: auto;			/* 화면에 다 담지 못할 경우 스크롤바를 만들어 줌 */
+    overflow: auto;		     	/* 화면에 다 담지 못할 경우 스크롤바를 만들어 줌 */
 	border: 1px solid black;	/* 테두리 */
 }
 
@@ -74,3 +74,4 @@ footer{
 	position: fixed;
 	bottom: 0;
 }
+
